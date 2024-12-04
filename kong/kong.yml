@@ -1,1 +1,14 @@
-
+_format_version: "3.0"
+services:
+  - name: django-notes-service
+    url: http://django_app:8000  # Internal service communication
+    routes:
+      - name: django-notes-route
+        paths:
+          - /notes
+        strip_path: false
+plugins:
+  - name: rate-limiting
+    config:
+      second: 5
+  - name: key-auth  # Enabling API key authentication

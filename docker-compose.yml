@@ -53,7 +53,7 @@ services:
       - notes-app-nw
 
   kong:
-    image: kong/kong-gateway:latest
+    image: kong/kong-gateway:3.8.0.0
     container_name: "kong"
     environment:
       - KONG_DATABASE=off

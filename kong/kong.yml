@@ -1,9 +1,0 @@
-_format_version: "3.0"
-services:
-  - name: django-notes-service
-    url: http://django_cont:8000
-    routes:
-      - name: django-notes-route
-        paths:
-          - /notes
-        strip_path: false # Ensure paths remain intact

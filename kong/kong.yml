@@ -6,3 +6,4 @@ services:
       - name: django-notes-route
         paths:
           - /notes
+        strip_path: false # Ensure paths remain intact
